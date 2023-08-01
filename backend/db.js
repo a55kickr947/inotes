@@ -1,5 +1,5 @@
 const mongoose = require ('mongoose');
-const mongoURI = 'mongodb://127.0.0.1:27017'
+const mongoURI = 'mongodb://127.0.0.1:27017/pages'
 
 const connectTomongo = async () => {
     try {
@@ -9,5 +9,5 @@ const connectTomongo = async () => {
       console.error("Error connecting to the database:", error);
     }
   };
-  
-module.exports =connectTomongo;
+    
+  module.exports =connectTomongo;
